@@ -21,7 +21,8 @@ app.route('#images', require('./views/images'))
 
 app.route('/hydra-links', require('./views/main'))
 app.route('/hydra-links/index.html', require('./views/main'))
-app.route('/hydra-links/#images', require('./views/images'))
+app.route('/hydra-links/index.html/#images', require('./views/images'))
+app.route('/hydra-links/images', require('./views/images'))
 app.route('/*', require('./views/404'))
 
 module.exports = app.mount('body')
